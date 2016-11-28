@@ -1,4 +1,4 @@
-import prettyBytes from 'pretty-bytes';
+import prettyBytes from './pretty-bytes';
 import { txtSvg, htmlSvg, otherSvg } from './svg';
 import { txtContainer, textarea, dropZone, dropBox, resultsNa, resultsContainer, tryagain, harvestBtn } from './selectors';
 

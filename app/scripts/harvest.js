@@ -17,23 +17,23 @@ const linksPttrn = /<a [^+>]*href="(https?:\/\/[^+>^"]*)"[^+>]*>([^<]+)<\/a>/gi;
 
 const emailPttrn = /<a [^+>]*href="mailto:(\S+@\S+\.\S+)"[^+>]*>[^<]+<\/a>/gi;
 
-export function harvestLinksReplace(html) {
-    const links = [];
-    const emailAddresses = [];
-
-    html.replace(linksPttrn, (...args) => {
-        links.push({ linkText: args[2], url: args[1] });
-    });
-
-    html.replace(emailPttrn, (...args) => {
-        emailAddresses.push(args[1]);
-    });
-
-    return {
-        links,
-        emailAddresses,
-    };
-}
+// function harvestLinksReplace(html) {
+//     const links = [];
+//     const emailAddresses = [];
+//
+//     html.replace(linksPttrn, (...args) => {
+//         links.push({ linkText: args[2], url: args[1] });
+//     });
+//
+//     html.replace(emailPttrn, (...args) => {
+//         emailAddresses.push(args[1]);
+//     });
+//
+//     return {
+//         links,
+//         emailAddresses,
+//     };
+// }
 
 export default function harvestLinksExec(html) {
     const links = [];
