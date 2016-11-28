@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Link Harverster</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">link <span>harvester</span></div>
+        <p class="header__description">A tool to <span>harvest</span> links from <span>HTML</span> markups.</p>
+    </header>
+    <div class="step -one">
+        <p>Step 1</p>
+        <p>Upload or paste a file in the area below.</p>
+        <p>NOTE: Pasted text larger than 64 KB is not supported. Upload instead.</p>
+    </div>
+
+    <div class="dropzone">
+        <div class="dropzone__box">
+            <div>Drag and drop files here.</div>
+            <div>
+                <input multiple type="file" id="upload-button" accept=".html,.txt,text/html,text/plain">or
+                <label for="upload-button">browse</label> for files.
+            </div>
+            <div>Drop to upload files.</div>
+        </div>
+    </div>
+
+    <div class="textarea">
+        <textarea class="textarea__input" placeholder="Enter HTML."></textarea>
+    </div>
+
+
+    <div class="step -two">
+        <p>Step 2</p>
+        <p>Click the button below.</p>
+    </div>
+    <div class="harvest">
+        <button class="-button" disabled>
+            Harvest Now
+        </button>
+    </div>
+    <div class="step -three">
+        <p>Step 3</p>
+        <p>View Harvests.</p>
+    </div>
+
+    <div class="results">
+        <div class="results__na">Please harvest a file or text before proceeding.</div>
+    </div>
+    <div class="tryagain">
+        <button class="-button">
+            TRY AGAIN
+        </button>
+    </div>
+    <footer class="footer">
+        <div class="footer__copyright">© CUSX.IO 2016 — <a target="_blank" href="https://cusx.io">cusx.io</a></div>
+        <div class="footer__builtwidth">~ built with <a target="_blank" href="https://cusxio.github.io/frontend-init/">Frontend Init</a>.</div>
+        <div class="footer__issues">Report any issues to <a target="_blank" href="https://github.com/cusxio/moderndeveloper-harvesting-links/issues">@Issues</a>.</div>
+        <div class="footer__source">Designed with Love. <a href="https://github.com/cusxio">Open Source</a>.</div>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
