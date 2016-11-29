@@ -10,13 +10,14 @@ export default function scripts(cb) {
 
     webpack(webpackConfig, (err, stats) => {
         if (err) {
-            console.log(err);
+            console.error(err);
+            process.exit(1);
         }
 
         if (stats.hasErrors()) {
-            console.log(stats.toString('errors-only'));
+            console.error(stats.toString('errors-only'));
+            process.exit(1);
         }
-
         cb();
     });
 }
